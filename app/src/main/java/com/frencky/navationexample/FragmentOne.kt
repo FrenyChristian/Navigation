@@ -24,9 +24,10 @@ class FragmentOne : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         button.setOnClickListener {
-            val action =  FragmentOneDirections.fragmentOneToFragmentTwo()
-            action.setNameUser(editText.text.toString())
+            val action  =  FragmentOneDirections.fragmentOneToFragmentTwo()
+            action.nameUser = editText.text.toString()
             findNavController().navigate(action)
+
         }
     }
 

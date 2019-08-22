@@ -21,9 +21,9 @@
         android:label="fragment_two"
         tools:layout="@layout/fragment_two">
 
+        <argument
+                android:name="nameUser"
+                android:defaultValue="Freny"
+                app:argType="string" />
     </fragment>
-    <argument
-        android:name="nameUser"
-        android:defaultValue="Freny"
-        app:argType="string" />
 </navigation>

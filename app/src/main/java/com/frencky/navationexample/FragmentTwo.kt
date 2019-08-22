@@ -21,7 +21,7 @@ class FragmentTwo : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val name = FragmentTwoArgs.fromBundle(arguments).nameUser
+        val name = FragmentTwoArgs.fromBundle(arguments!!).nameUser
         txtWelcome.text = "Hello $name!"
 
     }
